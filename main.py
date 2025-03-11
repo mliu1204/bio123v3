@@ -49,6 +49,8 @@ while True:
                 print (f"now running at speed {int_speed} and for {time_spin} seconds")
                 spin_centrifuge(int_speed, int_time)
                 time.sleep(int_time)
+                print ("finished running")
+                stream.start_stream()
                 continue
             else:
                 trying_to_confirm = False
